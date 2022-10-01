@@ -1,22 +1,26 @@
 import useFetch from "./useFetch";
+import TaskList from "./TaskList";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Navbar from "./Navbar";
+import Home from "./Home";
 
 function Index() {
-  useFetch('http://localhost:8000/tasks/allTasks/');
+  
 
   return (
+    <Router>
     <div className="index">
-      <nav className="navbar">
-        <h1>ToDo</h1>
-        <div className="links">
-          <a href="/add">Add Task</a>
-          <a href="/about">About</a>
-        </div>
-      </nav>
-      <div className="middleContent">
-        <h2>List of Tasks</h2>
-        <input type="search" placeholder="Search tasks" id="srch"/>
-      </div>
+      <Navbar/>
+      
+      <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        
+      </Switch>
+      
     </div>
+    </Router>
   );
 }
 
