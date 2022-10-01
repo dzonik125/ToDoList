@@ -1,6 +1,8 @@
-
+import useFetch from "./useFetch";
 
 function Index() {
+  useFetch('http://localhost:8000/tasks/allTasks/');
+
   return (
     <div className="index">
       <nav className="navbar">
