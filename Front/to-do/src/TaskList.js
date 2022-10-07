@@ -14,8 +14,6 @@ const TaskList = (props) => {
                     <Link to={`editTask/${task.pk}`}>
                     <h2>{task.fields.title}</h2>
                     <p>{task.fields.description}</p>
-                    <p>{task.fields.finishDate}</p>
-                    <p>{task.fields.createdDate}</p>
                     </Link>
                     
                 </div>

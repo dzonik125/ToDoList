@@ -67,3 +67,34 @@ body {
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.edit-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.edit-form label{
+  margin-top: 10%;
+  text-align: left;
+  display: block;
+}
+
+.edit-form input{
+  width: 70%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.edit-form button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  margin-left:-70px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
