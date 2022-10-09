@@ -1,8 +1,9 @@
-import useFetch from "./useFetch";
-import TaskList from "./TaskList";
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Navbar from "./Navbar";
 import Home from "./Home";
+import EditTask from "./EditTask";
 
 function Index() {
   
@@ -12,12 +13,13 @@ function Index() {
     <div className="index">
       <Navbar/>
       
-      <Switch>
-        <Route exact path="/">
-          <Home/>
-        </Route>
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route path = "/editTask/:id"
+          element={<EditTask/>}/>
         
-      </Switch>
+        
+      </Routes>
       
     </div>
     </Router>
