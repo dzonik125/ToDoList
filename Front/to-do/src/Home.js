@@ -11,7 +11,7 @@ const Home = () => {
             <input type="search" placeholder="Search tasks" id="srch"/>
             </div>
             {error && <div>{error}</div>}
-            {isPending && <div>Loading...</div>}
+            {isPending && <div className="pending">Loading...</div>}
             {tasks && <TaskList tasks={tasks}/>}
             
         </div>

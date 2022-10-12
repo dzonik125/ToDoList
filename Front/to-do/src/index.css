@@ -47,11 +47,10 @@ body {
 }
 
 .task-preview {
-  
   padding: 10px 16px;
   max-width: 600px;
   padding: 10px;
-  margin: auto 0;
+  margin: 0 auto;
   border-bottom: 1px solid #fafafa;
 }
 
@@ -66,6 +65,48 @@ body {
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
+}
+
+.pending{
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.addTask{
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 10px;
+}
+
+label{
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input[type=text]{
+  height: 20px;
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type=submit]{
+  display: block;
+  margin-top: 10px;
+  height: 40px;
+  font-weight: bold;
+}
+
+textarea{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.addForm{
+  margin-top: 20px;
 }
 
 .edit-form {
